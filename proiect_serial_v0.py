@@ -26,7 +26,7 @@ model = keras.Sequential([
 
 model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
 
-model.fit(x_train, y_train, epochs=10, batch_size=64)
+model.fit(x_train, y_train, epochs=20, batch_size=64)
 
 test_loss, test_acc = model.evaluate(x_test, y_test)
 print("Test accuracy:", test_acc)

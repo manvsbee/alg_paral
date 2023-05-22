@@ -39,7 +39,7 @@ def create_model():
 # Train the local model
 def train_model(model, x_train, y_train):
     model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
-    model.fit(x_train, y_train, epochs=10, batch_size=64)
+    model.fit(x_train, y_train, epochs=20, batch_size=64)
 
 # Reduce gradients and synchronize model parameters
 def reduce_gradients(model):
